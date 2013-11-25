@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6ED2A34B1843A44200D09FE6"
+               BlueprintIdentifier = "6E4426BA1843AD02002B9C38"
                BuildableName = "SanzenRadios.app"
                BlueprintName = "SanzenRadios"
                ReferencedContainer = "container:SanzenRadios.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6ED2A34B1843A44200D09FE6"
+            BlueprintIdentifier = "6E4426BA1843AD02002B9C38"
             BuildableName = "SanzenRadios.app"
             BlueprintName = "SanzenRadios"
             ReferencedContainer = "container:SanzenRadios.xcodeproj">
@@ -51,7 +51,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6ED2A34B1843A44200D09FE6"
+            BlueprintIdentifier = "6E4426BA1843AD02002B9C38"
             BuildableName = "SanzenRadios.app"
             BlueprintName = "SanzenRadios"
             ReferencedContainer = "container:SanzenRadios.xcodeproj">
@@ -69,7 +69,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6ED2A34B1843A44200D09FE6"
+            BlueprintIdentifier = "6E4426BA1843AD02002B9C38"
             BuildableName = "SanzenRadios.app"
             BlueprintName = "SanzenRadios"
             ReferencedContainer = "container:SanzenRadios.xcodeproj">
