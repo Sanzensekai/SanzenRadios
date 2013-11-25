@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--View Controller - SanzenRadios-->
         <scene sceneID="BVx-g1-VPU">
             <objects>
                 <viewController id="F9H-bs-a8q" sceneMemberID="viewController">
@@ -75,7 +75,7 @@
                             <constraint firstItem="3dH-qF-CFl" firstAttribute="trailing" secondItem="I9L-rg-omR" secondAttribute="trailing" type="default" id="yke-nQ-7B2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="VRE-uw-Mvn"/>
+                    <navigationItem key="navigationItem" title="SanzenRadios" id="VRE-uw-Mvn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MA-NL-8MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +128,7 @@
             </objects>
             <point key="canvasLocation" x="369" y="-53"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - SanzenRadios-->
         <scene sceneID="OoE-To-o4r">
             <objects>
                 <viewController id="DkZ-wI-VUG" sceneMemberID="viewController">
@@ -194,7 +194,7 @@
                             <constraint firstItem="yQv-zd-CtX" firstAttribute="trailing" secondItem="Rnv-2Q-vYF" secondAttribute="trailing" type="default" id="y7X-dJ-vG4"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Qqy-Hb-BOT"/>
+                    <navigationItem key="navigationItem" title="SanzenRadios" id="Qqy-Hb-BOT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ej3-Kn-De6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
