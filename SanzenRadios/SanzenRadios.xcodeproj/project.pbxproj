@@ -18,6 +18,8 @@
 		6E4426D51843AD02002B9C38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D41843AD02002B9C38 /* Default-568h@2x.png */; };
 		6E4426D81843AD02002B9C38 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */; };
 		6E4426DB1843AD02002B9C38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426DA1843AD02002B9C38 /* ViewController.m */; };
+		6E4426E31843D2F6002B9C38 /* RadiosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */; };
+		6E4426E81843D968002B9C38 /* Radio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426E71843D968002B9C38 /* Radio.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,11 @@
 		6E4426D71843AD02002B9C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		6E4426D91843AD02002B9C38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6E4426DA1843AD02002B9C38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListViewController.h; sourceTree = "<group>"; };
+		6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiosListViewController.m; sourceTree = "<group>"; };
+		6E4426E51843D3DA002B9C38 /* RadiosListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListDelegate.h; sourceTree = "<group>"; };
+		6E4426E61843D968002B9C38 /* Radio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Radio.h; sourceTree = "<group>"; };
+		6E4426E71843D968002B9C38 /* Radio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Radio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +94,12 @@
 				6E4426CE1843AD02002B9C38 /* AppDelegate.m */,
 				6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */,
 				6E4426D91843AD02002B9C38 /* ViewController.h */,
+				6E4426E61843D968002B9C38 /* Radio.h */,
+				6E4426E71843D968002B9C38 /* Radio.m */,
 				6E4426DA1843AD02002B9C38 /* ViewController.m */,
+				6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */,
+				6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */,
+				6E4426E51843D3DA002B9C38 /* RadiosListDelegate.h */,
 				6E4426C51843AD02002B9C38 /* Supporting Files */,
 			);
 			path = SanzenRadios;
@@ -176,6 +188,8 @@
 				6E4426CB1843AD02002B9C38 /* main.m in Sources */,
 				6E4426CF1843AD02002B9C38 /* AppDelegate.m in Sources */,
 				6E4426DB1843AD02002B9C38 /* ViewController.m in Sources */,
+				6E4426E31843D2F6002B9C38 /* RadiosListViewController.m in Sources */,
+				6E4426E81843D968002B9C38 /* Radio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
