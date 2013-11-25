@@ -41,7 +41,6 @@
 		6E4426DA1843AD02002B9C38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListViewController.h; sourceTree = "<group>"; };
 		6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiosListViewController.m; sourceTree = "<group>"; };
-		6E4426E51843D3DA002B9C38 /* RadiosListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListDelegate.h; sourceTree = "<group>"; };
 		6E4426E61843D968002B9C38 /* Radio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Radio.h; sourceTree = "<group>"; };
 		6E4426E71843D968002B9C38 /* Radio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Radio.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,7 +98,6 @@
 				6E4426DA1843AD02002B9C38 /* ViewController.m */,
 				6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */,
 				6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */,
-				6E4426E51843D3DA002B9C38 /* RadiosListDelegate.h */,
 				6E4426C51843AD02002B9C38 /* Supporting Files */,
 			);
 			path = SanzenRadios;

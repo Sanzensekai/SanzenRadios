@@ -15,6 +15,8 @@
 
 @implementation RadiosListViewController
 
+@synthesize radios;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
