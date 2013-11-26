@@ -10,23 +10,30 @@
 #import "Radio.h"
 #import "RadiosListViewController.h"
 
-@implementation AppDelegate{
+@implementation AppDelegate
+{
     NSMutableArray *radios;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    radios = [NSMutableArray arrayWithCapacity:20 ];
-    Radio *radio = [[Radio alloc] init];
-    radio.name = @"France Info";
-    [radios addObject:radio];
-    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    UINavigationController *navigationController = [[tabBarController viewControllers] objectAtIndex:0];
-    RadiosListViewController *radiosListViewController =
-    [[navigationController viewControllers] objectAtIndex:0];
-    radiosListViewController.radios = radios;
-    
+//    radios = [NSMutableArray arrayWithCapacity:20 ];
+//    Radio *radio = [[Radio alloc] init];
+//    radio.name = @"France Info";
+//    radio.category = @"Information";
+//    [radios addObject:radio];
+//    radio = [[Radio alloc] init];
+//    radio.name = @"Europe 1";
+//    radio.category = @"Généraliste";
+//    [radios addObject:radio];
+//    radio = [[Radio alloc] init];
+//    radio.name = @"Sans titre";
+//    radio.category = @"Aucune";
+//    [radios addObject:radio];
+//    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+//    RadiosListViewController *radiosListViewController = [[navigationController viewControllers] objectAtIndex:0];
+//    radiosListViewController.radios = radios;
     return YES;
 }
 							

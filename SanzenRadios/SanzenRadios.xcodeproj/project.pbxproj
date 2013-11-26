@@ -17,9 +17,12 @@
 		6E4426D31843AD02002B9C38 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D21843AD02002B9C38 /* Default@2x.png */; };
 		6E4426D51843AD02002B9C38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D41843AD02002B9C38 /* Default-568h@2x.png */; };
 		6E4426D81843AD02002B9C38 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */; };
-		6E4426DB1843AD02002B9C38 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426DA1843AD02002B9C38 /* ViewController.m */; };
+		6E4426DB1843AD02002B9C38 /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426DA1843AD02002B9C38 /* RadioViewController.m */; };
 		6E4426E31843D2F6002B9C38 /* RadiosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */; };
 		6E4426E81843D968002B9C38 /* Radio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426E71843D968002B9C38 /* Radio.m */; };
+		6EAFBEF71844E522006AB248 /* AddRadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBEF61844E522006AB248 /* AddRadioViewController.m */; };
+		6EAFBEF91844EB60006AB248 /* radios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBEF81844EB60006AB248 /* radios.plist */; };
+		6EAFBEFB1844FD4D006AB248 /* radiosurl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBEFA1844FD4D006AB248 /* radiosurl.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,12 +40,17 @@
 		6E4426D21843AD02002B9C38 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		6E4426D41843AD02002B9C38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		6E4426D71843AD02002B9C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6E4426D91843AD02002B9C38 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6E4426DA1843AD02002B9C38 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6E4426D91843AD02002B9C38 /* RadioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
+		6E4426DA1843AD02002B9C38 /* RadioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioViewController.m; sourceTree = "<group>"; };
 		6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListViewController.h; sourceTree = "<group>"; };
 		6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiosListViewController.m; sourceTree = "<group>"; };
 		6E4426E61843D968002B9C38 /* Radio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Radio.h; sourceTree = "<group>"; };
 		6E4426E71843D968002B9C38 /* Radio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Radio.m; sourceTree = "<group>"; };
+		6EAFBEF51844E522006AB248 /* AddRadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRadioViewController.h; sourceTree = "<group>"; };
+		6EAFBEF61844E522006AB248 /* AddRadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRadioViewController.m; sourceTree = "<group>"; };
+		6EAFBEF81844EB60006AB248 /* radios.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = radios.plist; sourceTree = "<group>"; };
+		6EAFBEFA1844FD4D006AB248 /* radiosurl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = radiosurl.plist; sourceTree = "<group>"; };
+		6EAFBEFC18450169006AB248 /* RadiosListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,15 +97,20 @@
 		6E4426C41843AD02002B9C38 /* SanzenRadios */ = {
 			isa = PBXGroup;
 			children = (
+				6EAFBEF81844EB60006AB248 /* radios.plist */,
+				6EAFBEFA1844FD4D006AB248 /* radiosurl.plist */,
 				6E4426CD1843AD02002B9C38 /* AppDelegate.h */,
 				6E4426CE1843AD02002B9C38 /* AppDelegate.m */,
-				6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */,
-				6E4426D91843AD02002B9C38 /* ViewController.h */,
 				6E4426E61843D968002B9C38 /* Radio.h */,
 				6E4426E71843D968002B9C38 /* Radio.m */,
-				6E4426DA1843AD02002B9C38 /* ViewController.m */,
+				6E4426D91843AD02002B9C38 /* RadioViewController.h */,
+				6E4426DA1843AD02002B9C38 /* RadioViewController.m */,
+				6EAFBEF51844E522006AB248 /* AddRadioViewController.h */,
+				6EAFBEF61844E522006AB248 /* AddRadioViewController.m */,
 				6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */,
 				6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */,
+				6EAFBEFC18450169006AB248 /* RadiosListDelegate.h */,
+				6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */,
 				6E4426C51843AD02002B9C38 /* Supporting Files */,
 			);
 			path = SanzenRadios;
@@ -173,6 +186,8 @@
 				6E4426D31843AD02002B9C38 /* Default@2x.png in Resources */,
 				6E4426D51843AD02002B9C38 /* Default-568h@2x.png in Resources */,
 				6E4426D81843AD02002B9C38 /* MainStoryboard.storyboard in Resources */,
+				6EAFBEF91844EB60006AB248 /* radios.plist in Resources */,
+				6EAFBEFB1844FD4D006AB248 /* radiosurl.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,9 +200,10 @@
 			files = (
 				6E4426CB1843AD02002B9C38 /* main.m in Sources */,
 				6E4426CF1843AD02002B9C38 /* AppDelegate.m in Sources */,
-				6E4426DB1843AD02002B9C38 /* ViewController.m in Sources */,
+				6E4426DB1843AD02002B9C38 /* RadioViewController.m in Sources */,
 				6E4426E31843D2F6002B9C38 /* RadiosListViewController.m in Sources */,
 				6E4426E81843D968002B9C38 /* Radio.m in Sources */,
+				6EAFBEF71844E522006AB248 /* AddRadioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +326,7 @@
 				6E4426E01843AD02002B9C38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,5 +11,9 @@
 @interface RadiosListViewController : UITableViewController
 
 @property (nonatomic, strong) NSMutableArray *radios;
+@property (nonatomic, strong) NSMutableArray *radiourls;
+@property (nonatomic, strong) NSDictionary *data;
+
+- (IBAction)toggleEdit:(id)sender;
 
 @end

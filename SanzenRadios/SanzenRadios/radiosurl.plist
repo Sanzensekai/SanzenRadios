@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Europe 1.url</key>
+	<string>http://www.listenlive.eu/franceinfo.m3u</string>
+	<key>France Info.url</key>
+	<string>http://vipicecast.yacast.net/europe1</string>
+</dict>
+</plist>

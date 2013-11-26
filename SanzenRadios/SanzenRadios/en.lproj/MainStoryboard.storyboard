@@ -9,7 +9,7 @@
             <objects>
                 <viewController id="F9H-bs-a8q" userLabel="Add Radio View Controller - SanzenRadios" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9L-rg-omR">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="3dH-qF-CFl">
@@ -86,7 +86,7 @@
             <objects>
                 <tableViewController id="6ES-JP-dIy" userLabel="Radios List View Controller - SanzenRadios" customClass="RadiosListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7Xg-dQ-lnp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -116,13 +116,16 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="SanzenRadios" id="Nre-R4-bqb">
+                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="Wo5-2b-tcZ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="m0h-bT-vFG">
                             <connections>
                                 <segue destination="F9H-bs-a8q" kind="push" id="z2x-ev-6E6"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKR-7N-uWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,7 +136,7 @@
             <objects>
                 <viewController id="DkZ-wI-VUG" userLabel="Radio View Controller - SanzenRadios" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rlN-nB-2Bn">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="zaK-jY-hkb">
