@@ -1,5 +1,5 @@
 //
-//  AddRadioViewController.h
+//  RadiosViewController.h
 //  SanzenRadios
 //
 //  Created by Cours iPhone on 26/11/13.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddRadioViewController : UIViewController
+@interface RadiosViewController : UITableViewController
+
+- (IBAction)createComputer:(id)sender;
 
 @end

@@ -7,125 +7,114 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6E4426BF1843AD02002B9C38 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4426BE1843AD02002B9C38 /* UIKit.framework */; };
-		6E4426C11843AD02002B9C38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4426C01843AD02002B9C38 /* Foundation.framework */; };
-		6E4426C31843AD02002B9C38 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E4426C21843AD02002B9C38 /* CoreGraphics.framework */; };
-		6E4426C91843AD02002B9C38 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426C71843AD02002B9C38 /* InfoPlist.strings */; };
-		6E4426CB1843AD02002B9C38 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426CA1843AD02002B9C38 /* main.m */; };
-		6E4426CF1843AD02002B9C38 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426CE1843AD02002B9C38 /* AppDelegate.m */; };
-		6E4426D11843AD02002B9C38 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D01843AD02002B9C38 /* Default.png */; };
-		6E4426D31843AD02002B9C38 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D21843AD02002B9C38 /* Default@2x.png */; };
-		6E4426D51843AD02002B9C38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D41843AD02002B9C38 /* Default-568h@2x.png */; };
-		6E4426D81843AD02002B9C38 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */; };
-		6E4426DB1843AD02002B9C38 /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426DA1843AD02002B9C38 /* RadioViewController.m */; };
-		6E4426E31843D2F6002B9C38 /* RadiosListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */; };
-		6E4426E81843D968002B9C38 /* Radio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E4426E71843D968002B9C38 /* Radio.m */; };
-		6EAFBEF71844E522006AB248 /* AddRadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBEF61844E522006AB248 /* AddRadioViewController.m */; };
-		6EAFBEF91844EB60006AB248 /* radios.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBEF81844EB60006AB248 /* radios.plist */; };
-		6EAFBEFB1844FD4D006AB248 /* radiosurl.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBEFA1844FD4D006AB248 /* radiosurl.plist */; };
+		6EAFBF381845101F006AB248 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAFBF371845101F006AB248 /* UIKit.framework */; };
+		6EAFBF3A1845101F006AB248 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAFBF391845101F006AB248 /* Foundation.framework */; };
+		6EAFBF3C1845101F006AB248 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAFBF3B1845101F006AB248 /* CoreGraphics.framework */; };
+		6EAFBF3E1845101F006AB248 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EAFBF3D1845101F006AB248 /* CoreData.framework */; };
+		6EAFBF441845101F006AB248 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBF421845101F006AB248 /* InfoPlist.strings */; };
+		6EAFBF461845101F006AB248 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBF451845101F006AB248 /* main.m */; };
+		6EAFBF4A1845101F006AB248 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBF491845101F006AB248 /* AppDelegate.m */; };
+		6EAFBF4C1845101F006AB248 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBF4B1845101F006AB248 /* Default.png */; };
+		6EAFBF4E1845101F006AB248 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBF4D1845101F006AB248 /* Default@2x.png */; };
+		6EAFBF501845101F006AB248 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBF4F1845101F006AB248 /* Default-568h@2x.png */; };
+		6EAFBF531845101F006AB248 /* SanzenRadios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBF511845101F006AB248 /* SanzenRadios.xcdatamodeld */; };
+		6EAFBF5F18451894006AB248 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBF5D18451894006AB248 /* MainStoryboard.storyboard */; };
+		6EAFBF62184518DB006AB248 /* RadiosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBF61184518DB006AB248 /* RadiosViewController.m */; };
+		6EAFBF6518451E1A006AB248 /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBF6418451E1A006AB248 /* RadioViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6E4426BB1843AD02002B9C38 /* SanzenRadios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanzenRadios.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E4426BE1843AD02002B9C38 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6E4426C01843AD02002B9C38 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6E4426C21843AD02002B9C38 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6E4426C61843AD02002B9C38 /* SanzenRadios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SanzenRadios-Info.plist"; sourceTree = "<group>"; };
-		6E4426C81843AD02002B9C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6E4426CA1843AD02002B9C38 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6E4426CC1843AD02002B9C38 /* SanzenRadios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SanzenRadios-Prefix.pch"; sourceTree = "<group>"; };
-		6E4426CD1843AD02002B9C38 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		6E4426CE1843AD02002B9C38 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6E4426D01843AD02002B9C38 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		6E4426D21843AD02002B9C38 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		6E4426D41843AD02002B9C38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		6E4426D71843AD02002B9C38 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		6E4426D91843AD02002B9C38 /* RadioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
-		6E4426DA1843AD02002B9C38 /* RadioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RadioViewController.m; sourceTree = "<group>"; };
-		6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListViewController.h; sourceTree = "<group>"; };
-		6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiosListViewController.m; sourceTree = "<group>"; };
-		6E4426E61843D968002B9C38 /* Radio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Radio.h; sourceTree = "<group>"; };
-		6E4426E71843D968002B9C38 /* Radio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Radio.m; sourceTree = "<group>"; };
-		6EAFBEF51844E522006AB248 /* AddRadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRadioViewController.h; sourceTree = "<group>"; };
-		6EAFBEF61844E522006AB248 /* AddRadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRadioViewController.m; sourceTree = "<group>"; };
-		6EAFBEF81844EB60006AB248 /* radios.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = radios.plist; sourceTree = "<group>"; };
-		6EAFBEFA1844FD4D006AB248 /* radiosurl.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = radiosurl.plist; sourceTree = "<group>"; };
-		6EAFBEFC18450169006AB248 /* RadiosListDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosListDelegate.h; sourceTree = "<group>"; };
+		6EAFBF341845101F006AB248 /* SanzenRadios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanzenRadios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EAFBF371845101F006AB248 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6EAFBF391845101F006AB248 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6EAFBF3B1845101F006AB248 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6EAFBF3D1845101F006AB248 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		6EAFBF411845101F006AB248 /* SanzenRadios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SanzenRadios-Info.plist"; sourceTree = "<group>"; };
+		6EAFBF431845101F006AB248 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6EAFBF451845101F006AB248 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6EAFBF471845101F006AB248 /* SanzenRadios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SanzenRadios-Prefix.pch"; sourceTree = "<group>"; };
+		6EAFBF481845101F006AB248 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6EAFBF491845101F006AB248 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6EAFBF4B1845101F006AB248 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6EAFBF4D1845101F006AB248 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6EAFBF4F1845101F006AB248 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		6EAFBF521845101F006AB248 /* SanzenRadios.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SanzenRadios.xcdatamodel; sourceTree = "<group>"; };
+		6EAFBF5E18451894006AB248 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = SanzenRadios/en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		6EAFBF60184518DB006AB248 /* RadiosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadiosViewController.h; sourceTree = "<group>"; };
+		6EAFBF61184518DB006AB248 /* RadiosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiosViewController.m; sourceTree = "<group>"; };
+		6EAFBF6318451E1A006AB248 /* RadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
+		6EAFBF6418451E1A006AB248 /* RadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6E4426B81843AD02002B9C38 /* Frameworks */ = {
+		6EAFBF311845101F006AB248 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4426BF1843AD02002B9C38 /* UIKit.framework in Frameworks */,
-				6E4426C11843AD02002B9C38 /* Foundation.framework in Frameworks */,
-				6E4426C31843AD02002B9C38 /* CoreGraphics.framework in Frameworks */,
+				6EAFBF381845101F006AB248 /* UIKit.framework in Frameworks */,
+				6EAFBF3A1845101F006AB248 /* Foundation.framework in Frameworks */,
+				6EAFBF3C1845101F006AB248 /* CoreGraphics.framework in Frameworks */,
+				6EAFBF3E1845101F006AB248 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6E4426B21843AD02002B9C38 = {
+		6EAFBF2B1845101F006AB248 = {
 			isa = PBXGroup;
 			children = (
-				6E4426C41843AD02002B9C38 /* SanzenRadios */,
-				6E4426BD1843AD02002B9C38 /* Frameworks */,
-				6E4426BC1843AD02002B9C38 /* Products */,
+				6EAFBF3F1845101F006AB248 /* SanzenRadios */,
+				6EAFBF361845101F006AB248 /* Frameworks */,
+				6EAFBF351845101F006AB248 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6E4426BC1843AD02002B9C38 /* Products */ = {
+		6EAFBF351845101F006AB248 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E4426BB1843AD02002B9C38 /* SanzenRadios.app */,
+				6EAFBF341845101F006AB248 /* SanzenRadios.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6E4426BD1843AD02002B9C38 /* Frameworks */ = {
+		6EAFBF361845101F006AB248 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6E4426BE1843AD02002B9C38 /* UIKit.framework */,
-				6E4426C01843AD02002B9C38 /* Foundation.framework */,
-				6E4426C21843AD02002B9C38 /* CoreGraphics.framework */,
+				6EAFBF371845101F006AB248 /* UIKit.framework */,
+				6EAFBF391845101F006AB248 /* Foundation.framework */,
+				6EAFBF3B1845101F006AB248 /* CoreGraphics.framework */,
+				6EAFBF3D1845101F006AB248 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6E4426C41843AD02002B9C38 /* SanzenRadios */ = {
+		6EAFBF3F1845101F006AB248 /* SanzenRadios */ = {
 			isa = PBXGroup;
 			children = (
-				6EAFBEF81844EB60006AB248 /* radios.plist */,
-				6EAFBEFA1844FD4D006AB248 /* radiosurl.plist */,
-				6E4426CD1843AD02002B9C38 /* AppDelegate.h */,
-				6E4426CE1843AD02002B9C38 /* AppDelegate.m */,
-				6E4426E61843D968002B9C38 /* Radio.h */,
-				6E4426E71843D968002B9C38 /* Radio.m */,
-				6E4426D91843AD02002B9C38 /* RadioViewController.h */,
-				6E4426DA1843AD02002B9C38 /* RadioViewController.m */,
-				6EAFBEF51844E522006AB248 /* AddRadioViewController.h */,
-				6EAFBEF61844E522006AB248 /* AddRadioViewController.m */,
-				6E4426E11843D2F6002B9C38 /* RadiosListViewController.h */,
-				6E4426E21843D2F6002B9C38 /* RadiosListViewController.m */,
-				6EAFBEFC18450169006AB248 /* RadiosListDelegate.h */,
-				6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */,
-				6E4426C51843AD02002B9C38 /* Supporting Files */,
+				6EAFBF481845101F006AB248 /* AppDelegate.h */,
+				6EAFBF491845101F006AB248 /* AppDelegate.m */,
+				6EAFBF5D18451894006AB248 /* MainStoryboard.storyboard */,
+				6EAFBF6318451E1A006AB248 /* RadioViewController.h */,
+				6EAFBF6418451E1A006AB248 /* RadioViewController.m */,
+				6EAFBF60184518DB006AB248 /* RadiosViewController.h */,
+				6EAFBF61184518DB006AB248 /* RadiosViewController.m */,
+				6EAFBF511845101F006AB248 /* SanzenRadios.xcdatamodeld */,
+				6EAFBF401845101F006AB248 /* Supporting Files */,
 			);
 			path = SanzenRadios;
 			sourceTree = "<group>";
 		};
-		6E4426C51843AD02002B9C38 /* Supporting Files */ = {
+		6EAFBF401845101F006AB248 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6E4426C61843AD02002B9C38 /* SanzenRadios-Info.plist */,
-				6E4426C71843AD02002B9C38 /* InfoPlist.strings */,
-				6E4426CA1843AD02002B9C38 /* main.m */,
-				6E4426CC1843AD02002B9C38 /* SanzenRadios-Prefix.pch */,
-				6E4426D01843AD02002B9C38 /* Default.png */,
-				6E4426D21843AD02002B9C38 /* Default@2x.png */,
-				6E4426D41843AD02002B9C38 /* Default-568h@2x.png */,
+				6EAFBF411845101F006AB248 /* SanzenRadios-Info.plist */,
+				6EAFBF421845101F006AB248 /* InfoPlist.strings */,
+				6EAFBF451845101F006AB248 /* main.m */,
+				6EAFBF471845101F006AB248 /* SanzenRadios-Prefix.pch */,
+				6EAFBF4B1845101F006AB248 /* Default.png */,
+				6EAFBF4D1845101F006AB248 /* Default@2x.png */,
+				6EAFBF4F1845101F006AB248 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -133,13 +122,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6E4426BA1843AD02002B9C38 /* SanzenRadios */ = {
+		6EAFBF331845101F006AB248 /* SanzenRadios */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E4426DE1843AD02002B9C38 /* Build configuration list for PBXNativeTarget "SanzenRadios" */;
+			buildConfigurationList = 6EAFBF561845101F006AB248 /* Build configuration list for PBXNativeTarget "SanzenRadios" */;
 			buildPhases = (
-				6E4426B71843AD02002B9C38 /* Sources */,
-				6E4426B81843AD02002B9C38 /* Frameworks */,
-				6E4426B91843AD02002B9C38 /* Resources */,
+				6EAFBF301845101F006AB248 /* Sources */,
+				6EAFBF311845101F006AB248 /* Frameworks */,
+				6EAFBF321845101F006AB248 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -147,89 +136,87 @@
 			);
 			name = SanzenRadios;
 			productName = SanzenRadios;
-			productReference = 6E4426BB1843AD02002B9C38 /* SanzenRadios.app */;
+			productReference = 6EAFBF341845101F006AB248 /* SanzenRadios.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6E4426B31843AD02002B9C38 /* Project object */ = {
+		6EAFBF2C1845101F006AB248 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Cours iPhone";
 			};
-			buildConfigurationList = 6E4426B61843AD02002B9C38 /* Build configuration list for PBXProject "SanzenRadios" */;
+			buildConfigurationList = 6EAFBF2F1845101F006AB248 /* Build configuration list for PBXProject "SanzenRadios" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6E4426B21843AD02002B9C38;
-			productRefGroup = 6E4426BC1843AD02002B9C38 /* Products */;
+			mainGroup = 6EAFBF2B1845101F006AB248;
+			productRefGroup = 6EAFBF351845101F006AB248 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6E4426BA1843AD02002B9C38 /* SanzenRadios */,
+				6EAFBF331845101F006AB248 /* SanzenRadios */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6E4426B91843AD02002B9C38 /* Resources */ = {
+		6EAFBF321845101F006AB248 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4426C91843AD02002B9C38 /* InfoPlist.strings in Resources */,
-				6E4426D11843AD02002B9C38 /* Default.png in Resources */,
-				6E4426D31843AD02002B9C38 /* Default@2x.png in Resources */,
-				6E4426D51843AD02002B9C38 /* Default-568h@2x.png in Resources */,
-				6E4426D81843AD02002B9C38 /* MainStoryboard.storyboard in Resources */,
-				6EAFBEF91844EB60006AB248 /* radios.plist in Resources */,
-				6EAFBEFB1844FD4D006AB248 /* radiosurl.plist in Resources */,
+				6EAFBF441845101F006AB248 /* InfoPlist.strings in Resources */,
+				6EAFBF4C1845101F006AB248 /* Default.png in Resources */,
+				6EAFBF4E1845101F006AB248 /* Default@2x.png in Resources */,
+				6EAFBF501845101F006AB248 /* Default-568h@2x.png in Resources */,
+				6EAFBF5F18451894006AB248 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6E4426B71843AD02002B9C38 /* Sources */ = {
+		6EAFBF301845101F006AB248 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E4426CB1843AD02002B9C38 /* main.m in Sources */,
-				6E4426CF1843AD02002B9C38 /* AppDelegate.m in Sources */,
-				6E4426DB1843AD02002B9C38 /* RadioViewController.m in Sources */,
-				6E4426E31843D2F6002B9C38 /* RadiosListViewController.m in Sources */,
-				6E4426E81843D968002B9C38 /* Radio.m in Sources */,
-				6EAFBEF71844E522006AB248 /* AddRadioViewController.m in Sources */,
+				6EAFBF461845101F006AB248 /* main.m in Sources */,
+				6EAFBF4A1845101F006AB248 /* AppDelegate.m in Sources */,
+				6EAFBF531845101F006AB248 /* SanzenRadios.xcdatamodeld in Sources */,
+				6EAFBF62184518DB006AB248 /* RadiosViewController.m in Sources */,
+				6EAFBF6518451E1A006AB248 /* RadioViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6E4426C71843AD02002B9C38 /* InfoPlist.strings */ = {
+		6EAFBF421845101F006AB248 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E4426C81843AD02002B9C38 /* en */,
+				6EAFBF431845101F006AB248 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		6E4426D61843AD02002B9C38 /* MainStoryboard.storyboard */ = {
+		6EAFBF5D18451894006AB248 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6E4426D71843AD02002B9C38 /* en */,
+				6EAFBF5E18451894006AB248 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6E4426DC1843AD02002B9C38 /* Debug */ = {
+		6EAFBF541845101F006AB248 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +247,7 @@
 			};
 			name = Debug;
 		};
-		6E4426DD1843AD02002B9C38 /* Release */ = {
+		6EAFBF551845101F006AB248 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -285,7 +272,7 @@
 			};
 			name = Release;
 		};
-		6E4426DF1843AD02002B9C38 /* Debug */ = {
+		6EAFBF571845101F006AB248 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -296,7 +283,7 @@
 			};
 			name = Debug;
 		};
-		6E4426E01843AD02002B9C38 /* Release */ = {
+		6EAFBF581845101F006AB248 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -310,25 +297,37 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6E4426B61843AD02002B9C38 /* Build configuration list for PBXProject "SanzenRadios" */ = {
+		6EAFBF2F1845101F006AB248 /* Build configuration list for PBXProject "SanzenRadios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E4426DC1843AD02002B9C38 /* Debug */,
-				6E4426DD1843AD02002B9C38 /* Release */,
+				6EAFBF541845101F006AB248 /* Debug */,
+				6EAFBF551845101F006AB248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6E4426DE1843AD02002B9C38 /* Build configuration list for PBXNativeTarget "SanzenRadios" */ = {
+		6EAFBF561845101F006AB248 /* Build configuration list for PBXNativeTarget "SanzenRadios" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6E4426DF1843AD02002B9C38 /* Debug */,
-				6E4426E01843AD02002B9C38 /* Release */,
+				6EAFBF571845101F006AB248 /* Debug */,
+				6EAFBF581845101F006AB248 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6EAFBF511845101F006AB248 /* SanzenRadios.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6EAFBF521845101F006AB248 /* SanzenRadios.xcdatamodel */,
+			);
+			currentVersion = 6EAFBF521845101F006AB248 /* SanzenRadios.xcdatamodel */;
+			path = SanzenRadios.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 6E4426B31843AD02002B9C38 /* Project object */;
+	rootObject = 6EAFBF2C1845101F006AB248 /* Project object */;
 }

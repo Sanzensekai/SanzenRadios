@@ -1,21 +1,20 @@
 //
-//  RadiosListViewController.m
+//  RadiosViewController.m
 //  SanzenRadios
 //
-//  Created by Cours iPhone on 25/11/13.
+//  Created by Cours iPhone on 26/11/13.
 //  Copyright (c) 2013 Cours iPhone. All rights reserved.
 //
 
-#import "RadiosListViewController.h"
-#import "Radio.h"
+#import "RadiosViewController.h"
+#import "AppDelegate.h"
+#import "RadioViewController.h"
 
-@interface RadiosListViewController ()
+@interface RadiosViewController ()
 
 @end
 
-@implementation RadiosListViewController
-
-@synthesize radios;
+@implementation RadiosViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,16 +34,6 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"radios" ofType:@"plist"];
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    self.data = dict;
-    self.radios = [[[dict allKeys] sortedArrayUsingSelector:@selector(compare:)] mutableCopy];
-    
-    NSString *pathurl = [[NSBundle mainBundle] pathForResource:@"radiourls" ofType:@"plist"];
-    NSDictionary *dicturl = [[NSDictionary alloc] initWithContentsOfFile:path];
-    self.data = dicturl;
-    self.radiourls = [[[dict allValues] sortedArrayUsingSelector:@selector(compare:)] mutableCopy];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,13 +42,23 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark Computer List Delegate
-
-- (void)setEditedName:(NSString *)name atIndexPath:(NSIndexPath *)indexPath
+// récupère la liste de toutes les radios stockés en BDD
+- (NSArray *)allRadios
 {
-    [self.radios replaceObjectAtIndex:indexPath.row withObject:name];
-    [self.tableView reloadRowsAtIndexPaths:@[indexPath]
-                          withRowAnimation:UITableViewRowAnimationAutomatic];
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Radio" inManagedObjectContext:context];
+    NSFetchRequest *request = [[NSFetchRequest alloc] init];
+    [request setEntity:entityDescription];
+    
+    NSError *error;
+    NSArray *objects = [context executeFetchRequest:request error:&error];
+    
+    if (objects == nil)
+        NSLog(@"There was an error!");
+    
+    return objects;
 }
 
 #pragma mark - Table view data source
@@ -73,19 +72,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.radios count];;
+    return [[self allRadios] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"RadioCell";
-    UITableViewCell *cell = [tableView
-                             dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.radios objectAtIndex:indexPath.row];
-    
-    cell.detailTextLabel.text = [self.radiourls objectAtIndex:indexPath.row];
-    
+    // Configure the cell...
+    NSManagedObject *radio = [[self allRadios] objectAtIndex:indexPath.row];
+    cell.textLabel.text = [radio valueForKey:@"name"];
+    cell.detailTextLabel.text = [radio valueForKey:@"category"];
     return cell;
 }
 
@@ -141,23 +139,29 @@
      */
 }
 
-- (IBAction)toggleEdit:(id)sender
+// rafraichit la vue lorsque les données ont changé (une radio a été ajoutée par ex)
+- (void)viewWillAppear:(BOOL)animated
 {
-    [self.tableView setEditing:!self.tableView.editing animated:YES];
-    
-    if (self.tableView.editing)
-        [self.navigationItem.rightBarButtonItem setTitle:@"Done"];
-    else
-        [self.navigationItem.rightBarButtonItem setTitle:@"Delete"];
+    [self.tableView reloadData];
+    [super viewWillAppear:animated];
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+
+- (IBAction)createComputer:(id)sender
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.radios removeObjectAtIndex:indexPath.row];
-        [tableView deleteRowsAtIndexPaths:@[indexPath]
-                         withRowAnimation:UITableViewRowAnimationFade];
-    }
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    
+    // création de l'objet persistent dans le contexte
+    NSManagedObject *radio = [NSEntityDescription insertNewObjectForEntityForName:@"Radio" inManagedObjectContext:context];
+    [self.tableView reloadData];
+}
+
+// méthode appelée lorsque l'on appuit sur le computer a modifier
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    RadioViewController *controller = segue.destinationViewController;
+    controller.radio = [[self allRadios] objectAtIndex:[self.tableView indexPathForCell:sender].row];
 }
 
 @end

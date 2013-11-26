@@ -1,13 +1,12 @@
 //
-//  ViewController.m
+//  RadioViewController.m
 //  SanzenRadios
 //
-//  Created by Cours iPhone on 25/11/13.
+//  Created by Cours iPhone on 26/11/13.
 //  Copyright (c) 2013 Cours iPhone. All rights reserved.
 //
 
 #import "RadioViewController.h"
-#import "RadiosListDelegate.h"
 
 @interface RadioViewController ()
 
@@ -15,12 +14,18 @@
 
 @implementation RadioViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.textView.text = self.name;
-    [self.textView becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,17 +34,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.nameField.text = [self.radio valueForKey:@"name"];
+    self.categoryField.text = [self.radio valueForKey:@"category"];
+    self.urlField.text = [self.radio valueForKey:@"url"];
+}
+
 - (void)viewWillDisappear:(BOOL)animated
 {
-    [super viewWillDisappear:animated];
-    
-    if (self.delegate != nil && [self.delegate respondsToSelector:@selector(setEditedName:atIndexPath:)]) {
-        // Finish editing
-        [self.textView endEditing:YES];
-        // Prepare selection info
-        NSString *name = self.textView.text;
-        [self.delegate setEditedName:name atIndexPath:self.indexPath];
-    }
+    [self.radio setValue:self.nameField.text forKey:@"name"];
+    [self.radio setValue:self.categoryField.text forKey:@"category"];
+    [self.radio setValue:self.urlField.text forKey:@"url"];
 }
 
 @end

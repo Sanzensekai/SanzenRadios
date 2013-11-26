@@ -7,28 +7,14 @@
         <!--Add Radio View Controller - SanzenRadios-->
         <scene sceneID="BVx-g1-VPU">
             <objects>
-                <viewController id="F9H-bs-a8q" userLabel="Add Radio View Controller - SanzenRadios" sceneMemberID="viewController">
+                <viewController id="F9H-bs-a8q" userLabel="Add Radio View Controller - SanzenRadios" customClass="RadioViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9L-rg-omR">
                         <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="3dH-qF-CFl">
-                                <items>
-                                    <barButtonItem systemItem="play" id="wfw-yz-UaF"/>
-                                    <barButtonItem systemItem="pause" id="RZW-gK-g8p"/>
-                                </items>
-                            </toolbar>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pwv-z6-22q">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="134" id="wGl-Ms-Wup"/>
-                                    <constraint firstAttribute="height" constant="30" id="yA0-yb-EdB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCM-sV-HvP">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="6Gr-hi-oBG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -52,39 +38,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hTK-Ho-5fe">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hTK-Ho-5fe" firstAttribute="leading" secondItem="pwv-z6-22q" secondAttribute="leading" type="default" id="1sS-Ja-RvT"/>
                             <constraint firstItem="XcU-Tb-3i9" firstAttribute="leading" secondItem="I9L-rg-omR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="69E-vT-pBG"/>
                             <constraint firstItem="XcU-Tb-3i9" firstAttribute="bottom" secondItem="pwv-z6-22q" secondAttribute="bottom" type="default" id="6SI-6z-SAm"/>
                             <constraint firstItem="pwv-z6-22q" firstAttribute="top" secondItem="I9L-rg-omR" secondAttribute="top" constant="20" symbolic="YES" type="default" id="7Cp-qV-D34"/>
+                            <constraint firstItem="hTK-Ho-5fe" firstAttribute="top" secondItem="pwv-z6-22q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="9SA-9N-fS9"/>
                             <constraint firstItem="V9x-JZ-qdq" firstAttribute="leading" secondItem="I9L-rg-omR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="9z0-N6-Gjy"/>
                             <constraint firstItem="vJA-d9-QER" firstAttribute="leading" secondItem="I9L-rg-omR" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="A8y-oW-RAu"/>
-                            <constraint firstItem="V9x-JZ-qdq" firstAttribute="baseline" secondItem="NCM-sV-HvP" secondAttribute="baseline" type="default" id="B0P-gT-aZR"/>
-                            <constraint firstItem="NCM-sV-HvP" firstAttribute="leading" secondItem="FBu-YE-nEO" secondAttribute="leading" type="default" id="D0q-LX-b8j"/>
-                            <constraint firstItem="NCM-sV-HvP" firstAttribute="leading" secondItem="pwv-z6-22q" secondAttribute="leading" type="default" id="HWb-DW-m2W"/>
+                            <constraint firstItem="FBu-YE-nEO" firstAttribute="top" secondItem="hTK-Ho-5fe" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EJl-fl-YxW"/>
                             <constraint firstItem="pwv-z6-22q" firstAttribute="leading" secondItem="I9L-rg-omR" secondAttribute="leading" constant="131" id="Nhd-fl-dct"/>
-                            <constraint firstItem="NCM-sV-HvP" firstAttribute="top" secondItem="pwv-z6-22q" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SIU-bK-8Jw"/>
-                            <constraint firstItem="V9x-JZ-qdq" firstAttribute="top" secondItem="I9L-rg-omR" secondAttribute="top" constant="62" id="a1p-fX-w70"/>
-                            <constraint firstItem="3dH-qF-CFl" firstAttribute="bottom" secondItem="I9L-rg-omR" secondAttribute="bottom" type="default" id="cFr-gO-KLX"/>
-                            <constraint firstItem="FBu-YE-nEO" firstAttribute="top" secondItem="NCM-sV-HvP" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="eZd-ce-5Z5"/>
-                            <constraint firstItem="3dH-qF-CFl" firstAttribute="leading" secondItem="I9L-rg-omR" secondAttribute="leading" type="default" id="num-Yr-ckw"/>
+                            <constraint firstItem="hTK-Ho-5fe" firstAttribute="leading" secondItem="FBu-YE-nEO" secondAttribute="leading" type="default" id="bg8-WK-Dkh"/>
+                            <constraint firstItem="hTK-Ho-5fe" firstAttribute="trailing" secondItem="FBu-YE-nEO" secondAttribute="trailing" type="default" id="e2S-dx-C4o"/>
+                            <constraint firstItem="V9x-JZ-qdq" firstAttribute="top" secondItem="I9L-rg-omR" secondAttribute="top" constant="62" id="n5M-u6-McK"/>
                             <constraint firstItem="vJA-d9-QER" firstAttribute="top" secondItem="I9L-rg-omR" secondAttribute="top" constant="100" id="pNz-c7-4LU"/>
-                            <constraint firstItem="pwv-z6-22q" firstAttribute="trailing" secondItem="NCM-sV-HvP" secondAttribute="trailing" type="default" id="wwM-It-8cH"/>
-                            <constraint firstItem="FBu-YE-nEO" firstAttribute="trailing" secondItem="NCM-sV-HvP" secondAttribute="trailing" type="default" id="wxY-KW-Ckv"/>
-                            <constraint firstItem="3dH-qF-CFl" firstAttribute="trailing" secondItem="I9L-rg-omR" secondAttribute="trailing" type="default" id="yke-nQ-7B2"/>
+                            <constraint firstItem="hTK-Ho-5fe" firstAttribute="trailing" secondItem="pwv-z6-22q" secondAttribute="trailing" type="default" id="s0Y-OZ-niL"/>
                         </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="pause" id="vxd-0M-7Hh"/>
+                        <barButtonItem systemItem="play" id="C8X-ar-g9y"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="SanzenRadios" id="VRE-uw-Mvn"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="categoryField" destination="hTK-Ho-5fe" id="AN7-1c-8fg"/>
+                        <outlet property="nameField" destination="pwv-z6-22q" id="zsz-Vo-TXY"/>
+                        <outlet property="urlField" destination="FBu-YE-nEO" id="zp1-m3-qgQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MA-NL-8MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1079" y="-527"/>
+            <point key="canvasLocation" x="955" y="-142"/>
         </scene>
         <!--Radios List View Controller - SanzenRadios-->
         <scene sceneID="yIu-Qo-1XQ">
             <objects>
-                <tableViewController id="6ES-JP-dIy" userLabel="Radios List View Controller - SanzenRadios" customClass="RadiosListViewController" sceneMemberID="viewController">
+                <tableViewController id="6ES-JP-dIy" userLabel="Radios List View Controller - SanzenRadios" customClass="RadiosViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="7Xg-dQ-lnp">
                         <rect key="frame" x="0.0" y="64" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,7 +107,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="DkZ-wI-VUG" kind="push" id="2O0-4L-A5S"/>
+                                    <segue destination="F9H-bs-a8q" kind="push" id="Aly-1w-0IJ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -121,7 +117,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="trash" id="Wo5-2b-tcZ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="m0h-bT-vFG">
                             <connections>
-                                <segue destination="F9H-bs-a8q" kind="push" id="z2x-ev-6E6"/>
+                                <action selector="createComputer:" destination="6ES-JP-dIy" id="e9m-5y-VgO"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -130,78 +126,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKR-7N-uWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="369" y="-53"/>
-        </scene>
-        <!--Radio View Controller - SanzenRadios-->
-        <scene sceneID="OoE-To-o4r">
-            <objects>
-                <viewController id="DkZ-wI-VUG" userLabel="Radio View Controller - SanzenRadios" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rlN-nB-2Bn">
-                        <rect key="frame" x="0.0" y="64" width="320" height="460"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="zaK-jY-hkb">
-                                <items>
-                                    <barButtonItem systemItem="play" id="MTW-7N-Su9"/>
-                                    <barButtonItem systemItem="pause" id="aW5-iP-8kp"/>
-                                </items>
-                            </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yQv-zd-CtX">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="br8-WG-Gky"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rnv-2Q-vYF">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zaW-JB-xbW">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Nom :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f5E-yX-fgs">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Catégorie :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OWr-e4-R8s">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="URL :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gof-x9-0uP">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="yQv-zd-CtX" firstAttribute="bottom" secondItem="f5E-yX-fgs" secondAttribute="bottom" type="default" id="2e8-yZ-qhp"/>
-                            <constraint firstItem="yQv-zd-CtX" firstAttribute="top" secondItem="rlN-nB-2Bn" secondAttribute="top" constant="20" symbolic="YES" type="default" id="9nn-qw-e0P"/>
-                            <constraint firstItem="f5E-yX-fgs" firstAttribute="leading" secondItem="rlN-nB-2Bn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="CTW-h1-wTp"/>
-                            <constraint firstItem="Gof-x9-0uP" firstAttribute="top" secondItem="rlN-nB-2Bn" secondAttribute="top" constant="100" id="Dsn-3x-0yL"/>
-                            <constraint firstItem="Rnv-2Q-vYF" firstAttribute="leading" secondItem="yQv-zd-CtX" secondAttribute="leading" type="default" id="Ga5-Ji-Gkt"/>
-                            <constraint firstItem="zaK-jY-hkb" firstAttribute="leading" secondItem="rlN-nB-2Bn" secondAttribute="leading" type="default" id="Jk4-T1-ufh"/>
-                            <constraint firstItem="OWr-e4-R8s" firstAttribute="top" secondItem="rlN-nB-2Bn" secondAttribute="top" constant="62" id="QoN-IC-2a5"/>
-                            <constraint firstItem="Rnv-2Q-vYF" firstAttribute="leading" secondItem="zaW-JB-xbW" secondAttribute="leading" type="default" id="VXu-2I-6c2"/>
-                            <constraint firstItem="zaW-JB-xbW" firstAttribute="top" secondItem="Rnv-2Q-vYF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="YBu-ao-vQ6"/>
-                            <constraint firstItem="OWr-e4-R8s" firstAttribute="leading" secondItem="rlN-nB-2Bn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="b2S-kd-ZN1"/>
-                            <constraint firstItem="Gof-x9-0uP" firstAttribute="leading" secondItem="rlN-nB-2Bn" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="blR-Fo-Kwc"/>
-                            <constraint firstItem="zaK-jY-hkb" firstAttribute="bottom" secondItem="rlN-nB-2Bn" secondAttribute="bottom" type="default" id="eEa-O5-hne"/>
-                            <constraint firstItem="Rnv-2Q-vYF" firstAttribute="trailing" secondItem="zaW-JB-xbW" secondAttribute="trailing" type="default" id="eck-hJ-gsf"/>
-                            <constraint firstItem="zaK-jY-hkb" firstAttribute="trailing" secondItem="rlN-nB-2Bn" secondAttribute="trailing" type="default" id="iWs-cG-oPG"/>
-                            <constraint firstItem="yQv-zd-CtX" firstAttribute="leading" secondItem="rlN-nB-2Bn" secondAttribute="leading" constant="131" id="j12-Vj-Iqs"/>
-                            <constraint firstItem="Rnv-2Q-vYF" firstAttribute="top" secondItem="yQv-zd-CtX" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="n1f-wy-Oud"/>
-                            <constraint firstItem="yQv-zd-CtX" firstAttribute="trailing" secondItem="Rnv-2Q-vYF" secondAttribute="trailing" type="default" id="y7X-dJ-vG4"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="SanzenRadios" id="Qqy-Hb-BOT"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ej3-Kn-De6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1079" y="249"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hBV-VD-PnQ">
@@ -223,8 +147,19 @@
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
-        <class className="RadiosListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RadiosListViewController.h"/>
+        <class className="RadioViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RadioViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="categoryField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="nameField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="urlField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="RadiosViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RadiosViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="createComputer:"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

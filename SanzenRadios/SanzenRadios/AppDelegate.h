@@ -2,7 +2,7 @@
 //  AppDelegate.h
 //  SanzenRadios
 //
-//  Created by Cours iPhone on 25/11/13.
+//  Created by Cours iPhone on 26/11/13.
 //  Copyright (c) 2013 Cours iPhone. All rights reserved.
 //
 
@@ -11,5 +11,12 @@
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (readonly, strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (readonly, strong, nonatomic) NSManagedObjectModel *managedObjectModel;
+@property (readonly, strong, nonatomic) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+
+- (void)saveContext;
+- (NSURL *)applicationDocumentsDirectory;
 
 @end
