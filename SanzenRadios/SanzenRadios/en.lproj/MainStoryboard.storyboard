@@ -68,14 +68,14 @@
                     <navigationItem key="navigationItem" title="SanzenRadios" id="VRE-uw-Mvn"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="categoryField" destination="hTK-Ho-5fe" id="AN7-1c-8fg"/>
-                        <outlet property="nameField" destination="pwv-z6-22q" id="zsz-Vo-TXY"/>
-                        <outlet property="urlField" destination="FBu-YE-nEO" id="zp1-m3-qgQ"/>
+                        <outlet property="categoryField" destination="hTK-Ho-5fe" id="qKO-ad-7Jn"/>
+                        <outlet property="nameField" destination="pwv-z6-22q" id="RWc-Mq-RZJ"/>
+                        <outlet property="urlField" destination="FBu-YE-nEO" id="gFV-eB-T9Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6MA-NL-8MU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="955" y="-142"/>
+            <point key="canvasLocation" x="439" y="-30"/>
         </scene>
         <!--Radios List View Controller - SanzenRadios-->
         <scene sceneID="yIu-Qo-1XQ">
@@ -107,7 +107,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="F9H-bs-a8q" kind="push" id="Aly-1w-0IJ"/>
+                                    <segue destination="F9H-bs-a8q" kind="push" id="AXr-VI-nHI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -125,7 +125,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKR-7N-uWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="369" y="-53"/>
+            <point key="canvasLocation" x="-147" y="59"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hBV-VD-PnQ">
@@ -140,7 +140,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WLo-NZ-yTv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-158" y="-53"/>
+            <point key="canvasLocation" x="-696" y="59"/>
         </scene>
     </scenes>
     <classes>
