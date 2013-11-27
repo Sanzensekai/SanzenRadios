@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RadioViewController : UITableViewController
+@interface RadioViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *categoryField;
