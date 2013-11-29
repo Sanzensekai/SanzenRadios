@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface RadioViewController : UIViewController
 
@@ -14,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *categoryField;
 @property (weak, nonatomic) IBOutlet UITextField *urlField;
 
+@property (strong, nonatomic) MPMoviePlayerController *player;
 @property (strong, nonatomic) NSManagedObject *radio;
 
 @end
