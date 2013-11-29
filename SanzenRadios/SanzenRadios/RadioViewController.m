@@ -46,4 +46,15 @@
     [self.radio setValue:self.urlField.text forKey:@"url"];
 }
 
+-(IBAction)playStream:(id)sender
+{
+[self.player stop];
+self.player.contentURL = [NSURL URLWithString: URL-de-la-radio ];
+[self.player play];
+}
+
+-(IBAction)pauseStream:(id)sender
+{
+[self.player pause];
+}
 @end
