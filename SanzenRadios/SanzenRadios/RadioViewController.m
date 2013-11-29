@@ -18,6 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.player = [[MPMoviePlayerController alloc] init];
+    self.player.movieSourceType = MPMovieSourceTypeStreaming;
+    self.player.view.hidden = YES;
+    [self.view addSubview:self.player.view];
+    self.player.shouldAutoplay = NO;
+    [self.player prepareToPlay];
 }
 
 - (void)didReceiveMemoryWarning
