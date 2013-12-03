@@ -18,4 +18,7 @@
 @property (strong, nonatomic) MPMoviePlayerController *player;
 @property (strong, nonatomic) NSManagedObject *radio;
 
+- (IBAction)playStream:(id)sender;
+- (IBAction)pauseStream:(id)sender;
+
 @end
