@@ -21,6 +21,7 @@
 		6EAFBF5F18451894006AB248 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EAFBF5D18451894006AB248 /* MainStoryboard.storyboard */; };
 		6EAFBF62184518DB006AB248 /* RadiosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBF61184518DB006AB248 /* RadiosViewController.m */; };
 		6EAFBF6518451E1A006AB248 /* RadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EAFBF6418451E1A006AB248 /* RadioViewController.m */; };
+		6EE559BC1857A37600561074 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE559BB1857A37600561074 /* CustomCell.m */; };
 		6EF05040184E2AC600E7734D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF0503F184E2AC600E7734D /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,8 @@
 		6EAFBF61184518DB006AB248 /* RadiosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadiosViewController.m; sourceTree = "<group>"; };
 		6EAFBF6318451E1A006AB248 /* RadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadioViewController.h; sourceTree = "<group>"; };
 		6EAFBF6418451E1A006AB248 /* RadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadioViewController.m; sourceTree = "<group>"; };
+		6EE559BA1857A37600561074 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
+		6EE559BB1857A37600561074 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		6EF0503F184E2AC600E7734D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -103,6 +106,8 @@
 				6EAFBF6418451E1A006AB248 /* RadioViewController.m */,
 				6EAFBF60184518DB006AB248 /* RadiosViewController.h */,
 				6EAFBF61184518DB006AB248 /* RadiosViewController.m */,
+				6EE559BA1857A37600561074 /* CustomCell.h */,
+				6EE559BB1857A37600561074 /* CustomCell.m */,
 				6EAFBF511845101F006AB248 /* SanzenRadios.xcdatamodeld */,
 				6EAFBF401845101F006AB248 /* Supporting Files */,
 			);
@@ -194,6 +199,7 @@
 				6EAFBF531845101F006AB248 /* SanzenRadios.xcdatamodeld in Sources */,
 				6EAFBF62184518DB006AB248 /* RadiosViewController.m in Sources */,
 				6EAFBF6518451E1A006AB248 /* RadioViewController.m in Sources */,
+				6EE559BC1857A37600561074 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

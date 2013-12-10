@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="RadioCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RadioCell" textLabel="gVa-eB-vCc" detailTextLabel="OA0-iH-R7P" style="IBUITableViewCellStyleValue1" id="pIM-xU-f3P">
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="RadioCell" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RadioCell" textLabel="gVa-eB-vCc" detailTextLabel="OA0-iH-R7P" style="IBUITableViewCellStyleValue1" id="pIM-xU-f3P" customClass="CustomCell">
                                 <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -121,6 +121,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
+                                    <outlet property="customLabel" destination="gVa-eB-vCc" id="3v6-o5-8X2"/>
                                     <segue destination="F9H-bs-a8q" kind="push" id="AXr-VI-nHI"/>
                                 </connections>
                             </tableViewCell>
@@ -128,10 +129,9 @@
                     </tableView>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="SanzenRadios" id="Nre-R4-bqb">
-                        <barButtonItem key="leftBarButtonItem" systemItem="trash" id="Wo5-2b-tcZ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="m0h-bT-vFG">
                             <connections>
-                                <action selector="createComputer:" destination="6ES-JP-dIy" id="e9m-5y-VgO"/>
+                                <action selector="createRadio:" destination="6ES-JP-dIy" id="VGf-Qx-Xz7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -158,6 +158,12 @@
         </scene>
     </scenes>
     <classes>
+        <class className="CustomCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="customLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
@@ -174,7 +180,8 @@
         <class className="RadiosViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/RadiosViewController.h"/>
             <relationships>
-                <relationship kind="action" name="createComputer:"/>
+                <relationship kind="action" name="createRadio:"/>
+                <relationship kind="outlet" name="cell" candidateClass="CustomCell"/>
             </relationships>
         </class>
     </classes>

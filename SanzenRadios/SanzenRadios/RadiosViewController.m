@@ -87,59 +87,53 @@
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        if ([[self allRadios] count] >= 1)
+        {
+            [tableView beginUpdates];
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            
+            AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+            NSManagedObjectContext *context = [appDelegate managedObjectContext];
+            
+            NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Radio" inManagedObjectContext:context];
+            NSFetchRequest *request = [[NSFetchRequest alloc] init];
+            [request setEntity:entityDescription];
+            NSString* radioname = self.cell.customLabel.text;
+            [request setPredicate:[NSPredicate predicateWithFormat:@"content == %@", radioname]];
+            
+            NSError *error;
+            NSArray *objects = [context executeFetchRequest:request error:&error];
+            
+            if (objects == nil)
+                NSLog(@"There was an error!");
+            
+            [self.tableView reloadData];
+            
+        }
+        
+        if ([[self allRadios] count] == 0)
+        {
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        }
+        [tableView endUpdates];
+    }
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
 {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
+ 
 }
 */
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
-}
-
-// rafraichit la vue lorsque les données ont changé (une radio a été ajoutée par ex)
 - (void)viewWillAppear:(BOOL)animated
 {
     [self.tableView reloadData];
@@ -147,7 +141,7 @@
 }
 
 
-- (IBAction)createComputer:(id)sender
+- (IBAction)createRadio:(id)sender
 {
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
@@ -157,11 +151,11 @@
     [self.tableView reloadData];
 }
 
-// méthode appelée lorsque l'on appuit sur le computer a modifier
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     RadioViewController *controller = segue.destinationViewController;
     controller.radio = [[self allRadios] objectAtIndex:[self.tableView indexPathForCell:sender].row];
 }
+
 
 @end

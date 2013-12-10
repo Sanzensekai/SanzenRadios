@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomCell.h"
 
 @interface RadiosViewController : UITableViewController
 
-- (IBAction)createComputer:(id)sender;
+- (IBAction)createRadio:(id)sender;
+@property (weak, nonatomic) IBOutlet CustomCell *cell;
 
 @end
