@@ -94,30 +94,23 @@
         if ([[self allRadios] count] >= 1)
         {
             [tableView beginUpdates];
-            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
             
             AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
             NSManagedObjectContext *context = [appDelegate managedObjectContext];
+            [context deleteObject:[[self allRadios] objectAtIndex:indexPath.row]];
             
-            NSEntityDescription *entityDescription = [NSEntityDescription entityForName:@"Radio" inManagedObjectContext:context];
-            NSFetchRequest *request = [[NSFetchRequest alloc] init];
-            [request setEntity:entityDescription];
-            NSString* radioname = self.cell.customLabel.text;
-            [request setPredicate:[NSPredicate predicateWithFormat:@"content == %@", radioname]];
+            [tableView deleteRowsAtIndexPaths:@[indexPath]
+                             withRowAnimation:UITableViewRowAnimationLeft];
+            [context save:nil];
+
             
-            NSError *error;
-            NSArray *objects = [context executeFetchRequest:request error:&error];
-            
-            if (objects == nil)
-                NSLog(@"There was an error!");
-            
-            [self.tableView reloadData];
+            //[self.tableView reloadData];
             
         }
         
         if ([[self allRadios] count] == 0)
         {
-            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            //[tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
         }
         [tableView endUpdates];
     }
@@ -148,6 +141,8 @@
     
     // création de l'objet persistent dans le contexte
     NSManagedObject *radio = [NSEntityDescription insertNewObjectForEntityForName:@"Radio" inManagedObjectContext:context];
+    
+    [context save:nil];
     [self.tableView reloadData];
 }
 
