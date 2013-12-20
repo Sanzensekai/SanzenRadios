@@ -20,5 +20,6 @@
 
 - (IBAction)playStream:(id)sender;
 - (IBAction)pauseStream:(id)sender;
+- (IBAction)touchControl:(id)sender;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "RadioViewController.h"
+#import "AppDelegate.h"
 
 @interface RadioViewController ()
 
@@ -44,6 +45,10 @@
     [self.radio setValue:self.nameField.text forKey:@"name"];
     [self.radio setValue:self.categoryField.text forKey:@"category"];
     [self.radio setValue:self.urlField.text forKey:@"url"];
+    
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    NSManagedObjectContext *context = [appDelegate managedObjectContext];
+    [context save:nil];
 }
 
 - (IBAction)playStream:(id)sender
@@ -56,5 +61,9 @@
 - (IBAction)pauseStream:(id)sender
 {
     [self.player pause];
+}
+
+- (IBAction)touchControl:(id)sender {
+    [self.view endEditing:YES];
 }
 @end
